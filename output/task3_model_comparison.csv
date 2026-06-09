@@ -1,0 +1,7 @@
+model,MAE,RMSE,sMAPE_day,MAE_day,type
+AutoARIMA,4014.0,5029.7,81.92,4765.6,Statistical
+ARIMA_manual,3834.6,5557.1,88.99,5150.5,Statistical
+SeasonalNaive,1795.3,3267.9,53.7,3314.4,Statistical
+Ridge,2235.9,3013.1,62.6,3371.1,ML
+LightGBM,1716.4,3100.6,46.73,3154.2,ML
+XGBoost,1683.8,2952.9,46.77,3012.2,ML

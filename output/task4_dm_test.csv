@@ -1,0 +1,4 @@
+pair,t,p,sig
+ARIMA_manual vs MSTL_ETS,-2.542,0.0112,True
+ARIMA_manual vs Ridge,-6.393,0.0,True
+MSTL_ETS vs Ridge,-5.836,0.0,True

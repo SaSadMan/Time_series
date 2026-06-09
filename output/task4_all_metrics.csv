@@ -1,0 +1,13 @@
+model,MAE,RMSE,sMAPE_day,type,eval
+ARIMA_manual,1405.0,2687.3,37.15,Statistical,hold-out
+ARIMA_manual,1392.3,2696.9,35.51,Statistical,cv
+MSTL_ETS,1431.1,2726.3,36.8,Statistical,hold-out
+MSTL_ETS,1453.0,2724.9,35.73,Statistical,cv
+SeasonalNaive,2038.6,3903.8,67.31,Statistical,hold-out
+SeasonalNaive,1948.7,3667.1,50.74,Statistical,cv
+Ridge,1843.4,3128.8,41.07,ML,hold-out
+Ridge,1781.0,3124.7,45.3,ML,cv
+LightGBM,1820.3,3258.3,52.88,ML,hold-out
+LightGBM,2678.7,4269.1,63.88,ML,cv
+XGBoost,2210.7,3604.7,52.11,ML,hold-out
+XGBoost,2645.8,4237.4,64.55,ML,cv

@@ -1,0 +1,105 @@
+{
+  "config": {
+    "data_path": "output/plant2_prepared_timeseries.csv",
+    "output_dir": "output",
+    "freq": "15min",
+    "season_length": 96,
+    "test_days": 7,
+    "n_cv_windows": 3,
+    "random_seed": 42,
+    "h": 672,
+    "cv_step": 96
+  },
+  "best_model": "ARIMA_manual",
+  "best_model_type": "Statistical",
+  "best_MAE": 1405.0,
+  "best_RMSE": 2687.3,
+  "holdout": [
+    {
+      "type": "Statistical",
+      "model": "ARIMA_manual",
+      "MAE": 1405.0,
+      "RMSE": 2687.3,
+      "sMAPE_day": 37.15
+    },
+    {
+      "type": "Statistical",
+      "model": "MSTL_ETS",
+      "MAE": 1431.1,
+      "RMSE": 2726.3,
+      "sMAPE_day": 36.8
+    },
+    {
+      "type": "ML",
+      "model": "Ridge",
+      "MAE": 1843.4,
+      "RMSE": 3128.8,
+      "sMAPE_day": 41.07
+    },
+    {
+      "type": "ML",
+      "model": "LightGBM",
+      "MAE": 1820.3,
+      "RMSE": 3258.3,
+      "sMAPE_day": 52.88
+    },
+    {
+      "type": "ML",
+      "model": "XGBoost",
+      "MAE": 2210.7,
+      "RMSE": 3604.7,
+      "sMAPE_day": 52.11
+    },
+    {
+      "type": "Statistical",
+      "model": "SeasonalNaive",
+      "MAE": 2038.6,
+      "RMSE": 3903.8,
+      "sMAPE_day": 67.31
+    }
+  ],
+  "cv": [
+    {
+      "type": "Statistical",
+      "model": "ARIMA_manual",
+      "MAE": 1392.3,
+      "RMSE": 2696.9,
+      "sMAPE_day": 35.51
+    },
+    {
+      "type": "Statistical",
+      "model": "MSTL_ETS",
+      "MAE": 1453.0,
+      "RMSE": 2724.9,
+      "sMAPE_day": 35.73
+    },
+    {
+      "type": "ML",
+      "model": "Ridge",
+      "MAE": 1781.0,
+      "RMSE": 3124.7,
+      "sMAPE_day": 45.3
+    },
+    {
+      "type": "Statistical",
+      "model": "SeasonalNaive",
+      "MAE": 1948.7,
+      "RMSE": 3667.1,
+      "sMAPE_day": 50.74
+    },
+    {
+      "type": "ML",
+      "model": "XGBoost",
+      "MAE": 2645.8,
+      "RMSE": 4237.4,
+      "sMAPE_day": 64.55
+    },
+    {
+      "type": "ML",
+      "model": "LightGBM",
+      "MAE": 2678.7,
+      "RMSE": 4269.1,
+      "sMAPE_day": 63.88
+    }
+  ]
+}
